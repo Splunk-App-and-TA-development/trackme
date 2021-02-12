@@ -6,15 +6,13 @@
 # local metadata
 */metadata/local.meta
 
-# Custom lookup table
-*/lookups/my_frameid_lookup.csv
-
 # Compiled Python files
 *.pyo
 *.pyc
 
 # Backup files
 *~
+*/default.old*
 
 # pycharm
 .idea
@@ -29,4 +27,16 @@ backups
 
 # spl
 *.spl
+
+# Mac OS X cached files
+.DS_Store
+
+# Visual Basic Code
+.vscode
+
+# appinspect reports
+appinspect_report*.html
+
+# backup directory
+trackme/backup
 

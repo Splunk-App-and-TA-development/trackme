@@ -1,9 +1,66 @@
 <nav search_view="search" color="#404040">
   <view name="TrackMe" default="true" />
-  <view name="search" />
-  <view name="analysis_workspace" />
-  <view name="datasets" />
-  <view name="reports" />
-  <view name="alerts" />
-  <view name="dashboards" />
+  <view name="trackMe_summary" />
+  <a href="trackMe_qos">TrackMe QOS</a>
+  <a href="TrackMe_manage">TrackMe manage and configure</a>
+  <a href="TrackMe_maintenance">Maintenance mode</a>
+  <collection label="Search">
+    <view name="search" />
+    <view name="reports" />
+    <view name="dashboards" />
+    <view name="alerts" />
+    <view name="analysis_workspace" />
+  </collection>
+  <collection label="API &amp; tooling">
+    <view name="trackMe_api_reference" />
+  </collection>
+  <collection label="Collections">
+    <collection label="Data sources monitoring">
+      <a href="search?q=%7C%20inputlookup%20trackme_data_source_monitoring%20%7C%20eval%20keyid%3D_key">Data sources collection</a>
+      <a href="search?q=%7C%20inputlookup%20trackme_elastic_sources%20%7C%20eval%20keyid%3D_key">Elastic Shared Data sources collection</a>
+      <a href="search?q=%7C%20inputlookup%20trackme_elastic_sources_dedicated%20%7C%20eval%20keyid%3D_key">Elastic Dedicated Data sources mapping collection</a>
+      <collection label="Whitelist &amp; Blacklists">
+        <a href="search?q=%7C%20inputlookup%20trackme_data_source_monitoring_whitelist_index%20%7C%20eval%20keyid%3D_key">Allowlist indexes</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_data_source_monitoring_blacklist_index%20%7C%20eval%20keyid%3D_key">Blocklist indexes</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_data_source_monitoring_blacklist_host%20%7C%20eval%20keyid%3D_key">Blocklist hosts</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_data_source_monitoring_blacklist_sourcetype%20%7C%20eval%20keyid%3D_key">Blocklist sourcetypes</a>
+      </collection>
+      <collection label="Data sampling &amp; event format detection">
+        <a href="search?q=%7C%20inputlookup%20trackme_data_sampling%20%7C%20eval%20keyid%3D_key">Data sampling and event format detection collection</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_data_sampling_custom_models%20%7C%20eval%20keyid%3D_key">Data sampling and event format detection custom models collection</a>
+      </collection>
+    </collection>
+    <collection label="Data hosts monitoring">
+    <a href="search?q=%7C%20inputlookup%20trackme_host_monitoring%20%7C%20eval%20keyid%3D_key">Data Hosts collection</a>
+      <collection label="Whitelist &amp; Blacklists">
+        <a href="search?q=%7C%20inputlookup%20trackme_data_host_monitoring_whitelist_index%20%7C%20eval%20keyid%3D_key">Allowlist indexes</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_data_host_monitoring_blacklist_index%20%7C%20eval%20keyid%3D_key">Blocklist indexes</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_data_host_monitoring_blacklist_host%20%7C%20eval%20keyid%3D_key">Blocklist hosts</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_data_host_monitoring_blacklist_sourcetype%20%7C%20eval%20keyid%3D_key">Blocklist sourcetypes</a>
+      </collection>
+    </collection>
+    <collection label="Metric host monitoring">
+      <a href="search?q=%7C%20inputlookup%20trackme_metric_host_monitoring%20%7C%20eval%20keyid%3D_key">Metric hosts collection</a>
+      <a href="search?q=%7C%20inputlookup%20trackme_metric_lagging_definition%20%7C%20eval%20keyid%3D_key">Metric lagging definition</a>
+      <collection label="Whitelist &amp; Blacklists">
+        <a href="search?q=%7C%20inputlookup%20trackme_data_host_monitoring_whitelist_index%20%7C%20eval%20keyid%3D_key">Allowlist indexes</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_metric_host_monitoring_blacklist_index%20%7C%20eval%20keyid%3D_key">Blocklist indexes</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_metric_host_monitoring_blacklist_host%20%7C%20eval%20keyid%3D_key">Blocklist hosts</a>
+        <a href="search?q=%7C%20inputlookup%20trackme_metric_host_monitoring_blacklist_metric_category%20%7C%20eval%20keyid%3D_key">Blocklist Metric categories</a>
+      </collection>
+    </collection>
+    <a href="search?q=%7C%20inputlookup%20trackme_audit_changes%20%7C%20eval%20keyid%3D_key">Audit changes collection</a>
+    <a href="search?q=%7C%20inputlookup%20trackme_sources_knowledge%20%7C%20eval%20keyid%3D_key">Sources knowledge collection</a>
+    <a href="search?q=%7C%20inputlookup%20trackme_alerts_ack%20%7C%20eval%20keyid%3D_key">Alerting acknowledgment collection</a>
+    <a href="search?q=%7C%20inputlookup%20trackme_logical_group%20%7C%20eval%20keyid%3D_key">Logical group clustering collection</a>
+    <a href="search?q=%7C%20inputlookup%20trackme_summary_investigator_volume_outliers%20%7C%20eval%20keyid%3D_key">Summary Investigator for volume outliers behaviour analytic collection</a>
+  </collection>
+  <collection label="Audit">
+    <a href="trackMe_internal_scheduling">Audit scheduling</a>
+    <a href="trackMe_kvstore">KVstore collections</a>
+    <a href="trackMe_audit_data_sampling">Data sampling audit dashboard</a>
+  </collection>
+  <collection label="Help">
+      <a href="https://trackme.readthedocs.io/">Documentation on readthedocs.org</a>
+  </collection>
 </nav>
